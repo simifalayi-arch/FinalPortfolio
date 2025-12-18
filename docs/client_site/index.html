@@ -5,64 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bracelets by Chi</title>
 
+  <!-- Shared + Client CSS -->
   <link rel="stylesheet" href="../assets/shared.css">
   <link rel="stylesheet" href="./client.css">
 </head>
+
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero-inline">
-    <img src="./images/hero-bracelets.png" alt="Bracelets by Chi collection">
+  <!-- =========================
+       1. ANNOUNCEMENT BAR
+       ========================= -->
+  <div class="announcement">
+    <p>Shop our newest bracelet collection</p>
+  </div>
 
-    <div class="hero-overlay-inline">
-      <p class="hero-small">Bracelets by Chi</p>
-      <h1 class="hero-large">Charming Jewelry</h1>
-      <p class="hero-small">Unique hand-crafted pieces</p>
-      <a href="#shop" class="hero-button">Shop Collection</a>
+  <!-- =========================
+       2. NAVIGATION BAR
+       ========================= -->
+  <header class="nav">
+    <div class="nav-left">
+      <h1>Bracelets by Chi</h1>
+    </div>
+
+    <nav class="nav-right">
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- =========================
+       3. HERO SECTION
+       ========================= -->
+  <section class="hero">
+  <div class="hero-overlay">
+    <p class="hero-small">Bracelets by Chi</p>
+    <h1 class="hero-large">Charming Jewelry</h1>
+    <p class="hero-small">Unique hand-crafted pieces</p>
+    <a href="#shop" class="hero-button">Shop Collection</a>
+  </div>
+</section>
+
+
+  <!-- =========================
+       4. SHOP / PRODUCTS
+       ========================= -->
+  <section id="shop" class="shop">
+    <h2>Shop Bracelets</h2>
+
+    <div class="product-grid">
+      <!-- individual products go here -->
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
-  <div class="container">
-    <main>
-      <h2 id="shop">Shop Our Bracelets</h2>
+  <!-- =========================
+       5. ABOUT SECTION
+       ========================= -->
+  <section id="about" class="about">
+    <h2>About Bracelets by Chi</h2>
 
-      <div class="product-grid">
-        <div class="product">
-          <img src="./images/green-purple-star-bracelet.jpg">
-          <h3>Green and Purple Star Bracelet</h3>
-          <p>$15.00</p>
-        </div>
+    <div class="about-content">
+      <!-- founder image -->
+      <!-- about text -->
+    </div>
+  </section>
 
-        <div class="product">
-          <img src="./images/red-green-star-bracelet.jpg">
-          <h3>Red and Green Star Bracelet</h3>
-          <p>$15.00</p>
-        </div>
-
-        <div class="product">
-          <img src="./images/pastel-stack-bracelet-set.jpg">
-          <h3>Pastel Stack Bracelet Set</h3>
-          <p>$20.00</p>
-        </div>
-      </div>
-
-      <h2>About the Founder</h2>
-      <div class="about">
-        <img src="./images/founder.jpg">
-        <p>
-          Bracelets by Chi creates unique, handcrafted jewelry designed
-          to express individuality and creativity.
-        </p>
-      </div>
-
-      <p><a href="../">← Back to Hub</a></p>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Bracelets by Chi</p>
-    </footer>
-  </div>
+  <!-- =========================
+       6. FOOTER
+       ========================= -->
+  <footer>
+    <p>&copy; 2025 Bracelets by Chi</p>
+  </footer>
 
 </body>
 </html>
