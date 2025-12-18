@@ -172,7 +172,7 @@ body {
 }
 
 /* =========================
-   ABOUT SECTION
+   ABOUT SECTIONS
    ========================= */
 .about {
   padding: 90px 48px;
@@ -188,22 +188,27 @@ body {
 }
 
 .about-content {
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 45px;
-  align-items: center;
+  text-align: center;
 }
 
+/* FOUNDER IMAGE — CIRCLE */
 .about-content img {
-  width: 100%;
-  border-radius: 28px;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 25px auto;
+  display: block;
+  box-shadow: 0 12px 30px rgba(126, 96, 200, 0.3);
 }
 
 .about-content p {
   font-size: 16px;
   color: #444;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* =========================
@@ -228,16 +233,16 @@ footer {
     gap: 18px;
   }
 
-  .about-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
   .hero-large {
     font-size: 36px;
   }
 
   .hero-small {
     font-size: 20px;
+  }
+
+  .about-content img {
+    width: 180px;
+    height: 180px;
   }
 }
