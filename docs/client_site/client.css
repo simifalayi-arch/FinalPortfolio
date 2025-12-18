@@ -75,3 +75,49 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* HERO SECTION */
+
+.hero {
+  background-image: url("./images/hero-bracelets.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(94, 63, 163, 0.55);
+  padding: 60px 40px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+}
+
+.hero-small {
+  font-size: 25px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hero-large {
+  font-size: 45px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: white;
+  color: #5e3fa3;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.hero-button:hover {
+  background-color: #eee;
+}
