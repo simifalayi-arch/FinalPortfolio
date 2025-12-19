@@ -1,7 +1,6 @@
-/* =====================================
-   TRUE SWISS DESIGN — POSTER / EDITORIAL
-   Matches original swiss_design site
-   ===================================== */
+/* ==============================
+   SWISS DESIGN SYSTEM (REAL)
+   ============================== */
 
 * {
   margin: 0;
@@ -11,18 +10,18 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background: white;
-  color: #111;
+  background: #ffffff;
+  color: #111111;
 }
 
-/* PAGE */
+/* MAIN CONTAINER */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 60px;
+  padding: 96px 64px;
 }
 
-/* SWISS HERO GRID */
+/* HERO GRID */
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -32,22 +31,35 @@ body {
 
 /* TYPOGRAPHY */
 h1 {
-  font-size: 80px;
+  font-size: 84px;
   line-height: 0.95;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 32px;
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   cursor: pointer;
 }
 
 p {
-  max-width: 520px;
+  max-width: 560px;
   font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 18px;
+}
+
+/* NAV */
+nav a {
+  font-size: 14px;
+  margin-right: 28px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* ACCORDION */
@@ -55,29 +67,22 @@ p {
   display: none;
 }
 
-/* GALLERY — VISUALLY OBVIOUS */
+/* GRID DEMO */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .gallery div {
-  background: #ddd;
-  height: 200px;
-}
-
-/* NAV */
-nav a {
-  margin-right: 24px;
-  font-size: 14px;
-  text-decoration: underline;
+  background: #e0e0e0;
+  height: 220px;
 }
 
 /* FOOTER */
 footer {
   margin-top: 140px;
   font-size: 14px;
-  color: #444;
+  color: #555;
 }
