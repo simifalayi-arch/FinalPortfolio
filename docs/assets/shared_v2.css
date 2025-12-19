@@ -1,8 +1,9 @@
-/* =====================================
-   SWISS-INSPIRED MODERN DESIGN SYSTEM
-   Interactive + Purple Accent
-   ===================================== */
+/* =========================================
+   SWISS DESIGN SYSTEM — EDITORIAL MODERN
+   Purple Accent Edition
+   ========================================= */
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -17,23 +18,32 @@ body {
   line-height: 1.55;
 }
 
-/* GRID */
+/* GLOBAL GRID */
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 64px 32px;
+  padding: 96px 48px;
 }
 
-/* TYPOGRAPHY */
+/* EDITORIAL GRID (USED EVERYWHERE) */
+.editorial {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* TYPOGRAPHY — STRONG SWISS HIERARCHY */
 h1 {
-  font-size: 40px;
+  font-size: 64px;
   font-weight: 700;
+  line-height: 1;
   color: #4b2e83;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 600;
   color: #4b2e83;
   margin-top: 56px;
@@ -47,9 +57,19 @@ h3 {
 }
 
 p {
-  max-width: 620px;
-  font-size: 15px;
-  margin-bottom: 16px;
+  max-width: 520px;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+/* LISTS */
+ul {
+  padding-left: 20px;
+  max-width: 520px;
+}
+
+li {
+  margin-bottom: 8px;
 }
 
 /* LINKS */
@@ -68,94 +88,69 @@ header.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 32px;
+  padding: 32px 48px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-right a {
-  margin-left: 24px;
-  position: relative;
+  margin-left: 32px;
+  font-size: 15px;
 }
 
-.nav-right a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #4b2e83;
-  transition: width 0.2s ease;
-}
-
-.nav-right a:hover::after {
-  width: 100%;
-}
-
-/* ANNOUNCEMENT */
+/* ANNOUNCEMENT BAR */
 .announcement {
-  background: #4b2e83;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+  background-color: #4b2e83;
+  color: #ffffff;
+  padding: 12px 48px;
   font-size: 14px;
 }
 
-/* HERO */
+/* HERO — SWISS EDITORIAL */
 .hero {
-  height: 70vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 48px;
 }
 
 .hero-overlay {
-  max-width: 620px;
-}
-
-.hero-large {
-  font-size: 48px;
-  font-weight: 700;
-  color: #4b2e83;
-  margin-bottom: 16px;
+  max-width: 520px;
 }
 
 .hero-small {
   font-size: 14px;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-large {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 24px;
+  color: #4b2e83;
 }
 
 .hero-button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 28px;
-  background: #4b2e83;
-  color: white;
+  padding: 14px 32px;
+  background-color: #4b2e83;
+  color: #ffffff;
   font-size: 13px;
   letter-spacing: 1px;
-  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .hero-button:hover {
-  background: #37215f;
-  transform: translateY(-2px);
+  background-color: #37215f;
 }
 
-/* PRODUCTS */
+/* PRODUCTS — SWISS GRID */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 32px;
-  margin-top: 40px;
-}
-
-.product {
-  transition: transform 0.2s ease;
-}
-
-.product:hover {
-  transform: translateY(-4px);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 48px;
 }
 
 .product img {
@@ -168,23 +163,23 @@ header.nav {
   font-weight: 600;
 }
 
-/* ABOUT */
+/* ABOUT / CONTENT */
 .about-content {
-  max-width: 620px;
+  max-width: 520px;
 }
 
-/* FOUNDER */
+/* FOUNDER IMAGE */
 .about-content img {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 16px 0;
+  margin: 24px 0;
 }
 
 /* FOOTER */
 footer {
-  margin-top: 96px;
+  margin-top: 120px;
   font-size: 14px;
   color: #555;
 }
