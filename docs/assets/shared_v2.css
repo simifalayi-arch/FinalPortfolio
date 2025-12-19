@@ -1,6 +1,6 @@
 /* =========================================
-   SWISS STYLE — EDITORIAL DESIGN SYSTEM
-   Exact replica feel of swiss_design site
+   SWISS DESIGN — POSTER / EDITORIAL LAYOUT
+   Exact replica behavior of swiss_design
    ========================================= */
 
 * {
@@ -13,80 +13,67 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background: #ffffff;
   color: #111;
-  line-height: 1.6;
 }
 
-/* PAGE WIDTH */
+/* PAGE */
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 40px;
+  padding: 100px 60px;
+}
+
+/* TOP GRID (KEY DIFFERENCE) */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  margin-bottom: 120px;
 }
 
 /* TYPOGRAPHY */
 h1 {
   font-size: 72px;
-  line-height: 1.05;
+  line-height: 1;
   font-weight: 700;
-  margin-bottom: 32px;
 }
 
 h2 {
-  font-size: 28px;
-  margin-top: 72px;
+  font-size: 30px;
   margin-bottom: 16px;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
+  margin-top: 80px;
 }
 
 p {
+  max-width: 520px;
   font-size: 16px;
-  max-width: 680px;
   margin-bottom: 18px;
 }
 
-/* LISTS */
 ul {
   margin-left: 20px;
-  margin-bottom: 24px;
 }
 
 li {
   margin-bottom: 6px;
 }
 
+/* GALLERY (THIS WAS MISSING) */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.gallery div {
+  background: #ddd;
+  height: 180px;
+}
+
 /* LINKS */
 a {
   color: #000;
   text-decoration: underline;
-}
-
-/* SECTION DIVIDER FEEL */
-section {
-  margin-bottom: 80px;
-}
-
-/* GALLERY GRID (Swiss-style) */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 32px;
-}
-
-.gallery img {
-  width: 100%;
-  display: block;
-}
-
-/* NAV (minimal, text-only) */
-nav a {
-  margin-right: 20px;
-  font-size: 14px;
 }
 
 /* FOOTER */
