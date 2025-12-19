@@ -1,9 +1,8 @@
 /* =====================================
    SWISS-INSPIRED MODERN DESIGN SYSTEM
-   Purple Accent Edition
+   Interactive + Purple Accent
    ===================================== */
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -18,27 +17,27 @@ body {
   line-height: 1.55;
 }
 
-/* GRID CONTAINER (Swiss column feel) */
+/* GRID */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 64px 32px;
 }
 
-/* TYPOGRAPHY — CLEAR HIERARCHY */
+/* TYPOGRAPHY */
 h1 {
   font-size: 40px;
   font-weight: 700;
+  color: #4b2e83;
   margin-bottom: 20px;
-  color: #4b2e83; /* purple accent */
 }
 
 h2 {
   font-size: 26px;
   font-weight: 600;
+  color: #4b2e83;
   margin-top: 56px;
   margin-bottom: 16px;
-  color: #4b2e83;
 }
 
 h3 {
@@ -48,20 +47,9 @@ h3 {
 }
 
 p {
-  max-width: 620px; /* Swiss readable column */
+  max-width: 620px;
   font-size: 15px;
   margin-bottom: 16px;
-}
-
-/* LISTS */
-ul {
-  padding-left: 20px;
-  margin-bottom: 24px;
-  max-width: 620px;
-}
-
-li {
-  margin-bottom: 6px;
 }
 
 /* LINKS */
@@ -75,26 +63,45 @@ a:hover {
   text-decoration: underline;
 }
 
-/* NAVIGATION — LEFT ALIGNED, CLEAN */
-nav ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 32px;
+/* NAV */
+header.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-nav li {
-  margin-bottom: 8px;
+.nav-right a {
+  margin-left: 24px;
+  position: relative;
 }
 
-/* ANNOUNCEMENT BAR */
+.nav-right a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4b2e83;
+  transition: width 0.2s ease;
+}
+
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+/* ANNOUNCEMENT */
 .announcement {
-  background-color: #4b2e83;
-  color: white;
-  padding: 10px 32px;
+  background: #4b2e83;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
   font-size: 14px;
 }
 
-/* HERO — ASYMMETRICAL SWISS LAYOUT */
+/* HERO */
 .hero {
   height: 70vh;
   display: flex;
@@ -106,36 +113,36 @@ nav li {
   max-width: 620px;
 }
 
-.hero-small {
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
 .hero-large {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 20px;
   color: #4b2e83;
+  margin-bottom: 16px;
+}
+
+.hero-small {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .hero-button {
   display: inline-block;
-  margin-top: 16px;
-  padding: 12px 24px;
-  background-color: #4b2e83;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #4b2e83;
   color: white;
   font-size: 13px;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .hero-button:hover {
-  background-color: #37215f;
+  background: #37215f;
+  transform: translateY(-2px);
 }
 
-/* PRODUCT GRID — MODERN SWISS E-COMMERCE */
+/* PRODUCTS */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -143,23 +150,30 @@ nav li {
   margin-top: 40px;
 }
 
+.product {
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+}
+
 .product img {
   width: 100%;
-  display: block;
   margin-bottom: 12px;
 }
 
 .price {
-  font-weight: 600;
   color: #4b2e83;
+  font-weight: 600;
 }
 
-/* ABOUT SECTIONS */
+/* ABOUT */
 .about-content {
   max-width: 620px;
 }
 
-/* FOUNDER IMAGE */
+/* FOUNDER */
 .about-content img {
   width: 140px;
   height: 140px;
