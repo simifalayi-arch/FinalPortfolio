@@ -1,36 +1,83 @@
-/* INTERACTIVE ELEMENTS — SWISS SAFE */
+/* =====================================
+   TRUE SWISS DESIGN — POSTER / EDITORIAL
+   Matches original swiss_design site
+   ===================================== */
 
-nav a {
-  margin-right: 24px;
-  font-size: 14px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav a:hover {
-  text-decoration: underline;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: white;
+  color: #111;
 }
 
-/* Accordion headings */
-.toggle {
+/* PAGE */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 60px;
+}
+
+/* SWISS HERO GRID */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 120px;
+  margin-bottom: 140px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: 80px;
+  line-height: 0.95;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
-/* Accordion content */
+p {
+  max-width: 520px;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+/* ACCORDION */
 .toggle-content {
   display: none;
-  margin-top: 16px;
 }
 
-/* Visible state */
-.toggle.open + .toggle-content {
-  display: block;
+/* GALLERY — VISUALLY OBVIOUS */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
 }
 
-/* Demo boxes (visual grid demonstration) */
-.demo-box {
-  background: #e6e6e6;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.gallery div {
+  background: #ddd;
+  height: 200px;
+}
+
+/* NAV */
+nav a {
+  margin-right: 24px;
   font-size: 14px;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 140px;
+  font-size: 14px;
+  color: #444;
 }
